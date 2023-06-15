@@ -10,10 +10,16 @@
     <div>
         <h1 class="center_form" style="font-family:monospace;">📽️ FLIXSTER 📽️</h1>
     </div>
-    <form action="GET" class="center_form">
-        <input id = "userSearch" type="text" name="searchMovie" placeholder="Search Flixster">
-        <button id = "submitButton" type ="submit">Search</button>
-    </form>
 
+    <div>
+        <form method="GET" class="center_form">
+            <input id = "userSearch" type="text" name="searchMovie" placeholder="Search Flixster">
+            <button id = "submitButton" type ="submit">Search</button>
+        </form>
+    </div>
+    
+    <div id="movieResults" class="poster-format"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
