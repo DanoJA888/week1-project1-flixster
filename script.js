@@ -27,16 +27,22 @@ document.addEventListener("DOMContentLoaded", async (event) =>{
         
         movieResults.innerHTML="";
         results.forEach(movie => {
-            const poster = document.createElement("img");
-            poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-            poster.alt = movie.title;
-            movieResults.appendChild(poster)
 
-            const title = document.createElement("div");
+            const title = document.createElement("p");
             title.textContent = movie.title;
             movieResults.appendChild(title)
 
-            const rating = document.createElement("div")
+
+            const containPoster = document.createElement("div");
+            const poster = document.createElement("img");
+            poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+            poster.alt = movie.title;
+            containPoster.appendChild(poster)
+            movieResults.appendChild(containPoster)
+
+            
+
+            const rating = document.createElement("p")
             rating.textContent = "⭐️" + movie.vote_average +"⭐️";
             movieResults.appendChild(rating)
         });

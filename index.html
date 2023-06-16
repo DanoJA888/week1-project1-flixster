@@ -7,18 +7,26 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: black;">
-    <div>
-        <h1 class="center_form" style="font-family:monospace;">📽️ FLIXSTER 📽️</h1>
-    </div>
 
     <div>
-        <form method="GET" class="center_form">
+        <h1 class="title">📽️ FLIXSTER 📽️</h1>
+    </div>
+
+    <div style="margin-bottom: 80px; display: flex; justify-content: center;">
+        <form method="GET">
             <input id = "userSearch" type="text" name="searchMovie" placeholder="Search Flixster">
             <button id = "submitButton" type ="submit">Search</button>
         </form>
     </div>
-    
-    <div id="movieResults" class="poster-format"></div>
+
+
+    <div style="margin-bottom: 50px;">
+        <h2 style="color: gold; font-family: monospace; font-size: 35px; display: flex; justify-content: center;">Now Playing</h2>
+    </div>
+
+    <div id="movieResults" class="poster-format">
+        
+    </div>
 
     <script src="script.js"></script>
 </body>

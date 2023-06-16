@@ -1,19 +1,33 @@
 
-.center_form{
+.title{
     display: flex;
     justify-content: center;
     color: aliceblue;
+    font-family:monospace; 
+    font-size: 70px;
 }
+
 .poster-format img{
-    
-    padding: 70px;
-    border: 100px, solid, black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 100px, soid, white;
     margin: 20px;
     
 }
+
 .poster-format div{
     color: white;
     font-family: monospace;
     font-size: 20px;
-    
+    display: flex;
+    justify-content: center;
+}
+.poster-format p{
+    margin-bottom: 0px;
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
 }
