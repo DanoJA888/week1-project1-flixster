@@ -8,8 +8,9 @@ var movieGrid = document.getElementById("movie-grid");
 
 var pages = 1;
 var pageLoadingType = 1 // this variable is used for identifying when i need to pass the "now playing url" vs the "search" url
-var loadMoreMoviesBtn = document.getElementById("load-more-movies-btn")
+var loadMoreMoviesBtn = document.getElementById("load-more-movies-btn");
 
+var cancelSearch = document.getElementById("close-search-btn");
 
 async function loadMovies(loadingTypeId){
     try{
@@ -33,6 +34,7 @@ async function loadMovies(loadingTypeId){
             const poster = document.createElement("img");
             poster.src = `https://image.tmdb.org/t/p/w400${movie.poster_path}`;
             poster.alt = movie.title;
+            poster.style.color = "white";
             movieCard.appendChild(poster)
         
             const rating = document.createElement("p")
@@ -73,7 +75,6 @@ loadMoreMoviesBtn.addEventListener("click", async (event) =>{
     catch{
         console.log("something is wrong with the load more movies button")
     }
-
 })
 
 searchButton.addEventListener("click", async (event) =>{
@@ -93,6 +94,18 @@ searchButton.addEventListener("click", async (event) =>{
         
         console.log("something is wrong with the search")
     }
+})
 
+cancelSearch.addEventListener("click", async (event) =>{
+    event.preventDefault();
+    pages = 1
+    pageLoadingType = 1
+    movieGrid.innerHTML="";
+    try{
+        await loadMovies(pageLoadingType);
+    }
+    catch{
+        console.log("cnacel search isnt working")
+    }
 
 })
