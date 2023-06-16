@@ -6,16 +6,20 @@
     font-family:monospace; 
     font-size: 70px;
 }
-
+.poster-format {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 .poster-format img{
     display: flex;
     justify-content: center;
     padding: 10px;
-    border: 100px, soid, white;
+    border: 15px solid gold;
     margin: auto;
     
 }
-
 .poster-format div{
     color: white;
     font-family: monospace;
@@ -28,6 +32,19 @@
     color: white;
     font-family: monospace;
     font-size: 17px;
+    max-width: 400px;
     display: flex;
-    justify-content: center;
+    overflow-wrap: break-all;
+    justify-content:center;
 }
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+@media (min-width: 768px) {
+    .movie-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
