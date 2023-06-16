@@ -28,9 +28,17 @@ document.addEventListener("DOMContentLoaded", async (event) =>{
         movieResults.innerHTML="";
         results.forEach(movie => {
             const poster = document.createElement("img");
-            poster.src = `https://image.tmdb.org/t/p/w400${movie.poster_path}`;
+            poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
             poster.alt = movie.title;
             movieResults.appendChild(poster)
+
+            const title = document.createElement("div");
+            title.textContent = movie.title;
+            movieResults.appendChild(title)
+
+            const rating = document.createElement("div")
+            rating.textContent = "⭐️" + movie.vote_average +"⭐️";
+            movieResults.appendChild(rating)
         });
 
         console.log(data);
