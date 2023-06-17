@@ -4,9 +4,9 @@
 
 Submitted by: Daniel Aguilar
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: ~15 hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site](https://danoja888.github.io/week1-project1-flixster/)
 
 ### Application Features
 
@@ -44,7 +44,12 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-<div style="position: relative; padding-bottom: 52.1875%; height: 0;"><iframe src="https://www.loom.com/embed/baa3b591aac4414d8275ca38e6b41657?sid=ffaa1590-af22-4bb2-b38a-efb3f7ebfbfc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<a href="https://www.loom.com/share/baa3b591aac4414d8275ca38e6b41657">
+    <p>Loom | Free Screen & Video Recording Software | Loom - 16 June 2023 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/baa3b591aac4414d8275ca38e6b41657-with-play.gif">
+  </a>
+
+
 
 ### Reflection
 

@@ -1,5 +1,3 @@
-console.log("hello!")
-
 var api_key = "7284545292fe355c5ef22c4cfa1616a6";
 
 var searchButton =  document.getElementById("search-button");
@@ -13,16 +11,16 @@ var loadMoreMoviesBtn = document.getElementById("load-more-movies-btn");
 var cancelSearch = document.getElementById("close-search-btn");
 
 async function loadMovies(loadingTypeId){
-    try{
+    
         const pulledMovies = movieGrid.value;
         const searchValue = userSearch.value;
         const url = loadingTypeId === 1 ? `https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=${pages}` : `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&include_adult=false&language=en-US&page=${pages}&query=${searchValue}`;
 
-        console.log(url);
+        
         const response = await fetch(url);
         const data = await response.json();
         const results = data.results;
-        console.log(results)
+        
         
         results.forEach(movie => {
             const movieCard = document.createElement("div");
@@ -44,68 +42,41 @@ async function loadMovies(loadingTypeId){
             movieCard.classList.add("poster-format")
             movieGrid.appendChild(movieCard)
         });
-    }
-    catch{
-        console.log("loading isnt work")
-    }
+    
 }
 
 document.addEventListener("DOMContentLoaded", async (event) =>{
-    event.preventDefault();
-    console.log("It worked! :D");
-    movieGrid.innerHTML="";
     
-    try{
-        await loadMovies(pageLoadingType);
+    event.preventDefault();
+    movieGrid.innerHTML="";
+    await loadMovies(pageLoadingType);
 
-    }
-    catch{
-        console.log("Something isn't right...")
-    }
 })
 
 loadMoreMoviesBtn.addEventListener("click", async (event) =>{
+    
     event.preventDefault();
-    console.log("refresh prevented for load more movies")
     pages++;
-    console.log(pages);
-    try{
-        await loadMovies(pageLoadingType);
-    }
-    catch{
-        console.log("something is wrong with the load more movies button")
-    }
+    await loadMovies(pageLoadingType);
+    
 })
 
 searchButton.addEventListener("click", async (event) =>{
+    
     event.preventDefault();
     pages = 1
     pageLoadingType = 2
-    console.log(pages)
-    console.log(userSearch.value)
     movieGrid.innerHTML="";
-    try{
-        
-        await loadMovies(pageLoadingType);
+    await loadMovies(pageLoadingType);
 
-        console.log()
-    }
-    catch{
-        
-        console.log("something is wrong with the search")
-    }
 })
 
 cancelSearch.addEventListener("click", async (event) =>{
+    
     event.preventDefault();
     pages = 1
     pageLoadingType = 1
     movieGrid.innerHTML="";
-    try{
-        await loadMovies(pageLoadingType);
-    }
-    catch{
-        console.log("cnacel search isnt working")
-    }
-
+    await loadMovies(pageLoadingType);
+    
 })
