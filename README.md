@@ -44,26 +44,26 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+<div style="position: relative; padding-bottom: 52.1875%; height: 0;"><iframe src="https://www.loom.com/embed/baa3b591aac4414d8275ca38e6b41657?sid=ffaa1590-af22-4bb2-b38a-efb3f7ebfbfc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### Reflection
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+I think for the most part, I was somewhere in between feeling prepared and not. The content provided was definitely helpful, but I did need extra time to review some topics discussed such as JS and incorporating APIs, since I was new to that and felt I got lost during the lab walkthrough. 
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I think if I had more time I would try to finish all the stretch goals and design the page to make it look the way I like it.
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Not sure, I didn't do a demo, we were never told about this...
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+N/A
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+I wanted to shoutout maiky for helping me understadn a bit more about Javascript functions!! Also shout out to Diogo for explaining promises vs async and await functions, that definitely helped.
